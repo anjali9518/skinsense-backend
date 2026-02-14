@@ -64,21 +64,6 @@ Model loaded successfully
 API Server starting on http://0.0.0.0:2500
 ```
 
-### Start the Frontend
-
-```bash
-# In a separate terminal
-cd ui_design_project/skin-guardian
-npm run dev
-```
-
-The frontend starts on `http://localhost:8080`.
-
-### Use the App
-
-1. Open `http://localhost:8080` in your browser
-2. Go to **SkinSense** to upload a skin lesion image and get an AI diagnosis
-3. Go to **Learn** to read about skin cancer types, detection methods, and prevention
 
 ## API Endpoints
 
