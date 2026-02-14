@@ -11,9 +11,7 @@ __pycache__/
 dist/
 build/
 
-# Model file (too large for GitHub — download separately)
-*.h5
-*.hdf5
+
 
 # Uploaded images
 static/uploads/

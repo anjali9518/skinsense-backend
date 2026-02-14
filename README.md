@@ -27,8 +27,6 @@ mysite/
 ### 1. Backend (Flask API)
 
 ```bash
-# Navigate to project root
-cd mysite
 
 # Create virtual environment
 python -m venv venv
@@ -36,20 +34,14 @@ python -m venv venv
 # Activate virtual environment
 # Windows (PowerShell):
 venv\Scripts\Activate.ps1
-# Windows (CMD):
-venv\Scripts\activate.bat
-# macOS/Linux:
-source venv/bin/activate
+
 
 # Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Download the Model
 
-The trained model file `SkinCancerClassificationModelhdf5nc.h5` is not included in the repo due to its size (15 MB). Place it in the project root (`mysite/`) before starting the backend.
-
-### 3. Frontend (React)
+### 2. Frontend (React)
 
 ```bash
 cd ui_design_project/skin-guardian
