@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "Skin Cancer Detection API",
+    "description": "API endpoints for AI-powered skin cancer detection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2500/api/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "2500",
+          "path": ["api", "health"]
+        },
+        "description": "Check if the API server and ML model are operational"
+      },
+      "response": []
+    },
+    {
+      "name": "Analyze Image",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "",
+              "description": "Upload an image file (PNG, JPG, JPEG, GIF) max 10MB"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:2500/api/analyze",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "2500",
+          "path": ["api", "analyze"]
+        },
+        "description": "Upload and analyze a skin lesion image. Returns diagnosis, confidence, severity, and recommendations."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Classification Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2500/api/info",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "2500",
+          "path": ["api", "info"]
+        },
+        "description": "Get detailed information about all 8 cancer classifications"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Image",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2500/api/images/:filename",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "2500",
+          "path": ["api", "images", ":filename"],
+          "variable": [
+            {
+              "key": "filename",
+              "value": "20260207_103000_a1b2c3d4-e5f6-7890-abcd-ef1234567890.jpg",
+              "description": "Filename returned from analyze endpoint"
+            }
+          ]
+        },
+        "description": "Retrieve a previously uploaded image"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:2500",
+      "type": "string"
+    }
+  ]
+}

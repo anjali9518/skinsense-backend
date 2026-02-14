@@ -1,0 +1,47 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Model file (too large for GitHub — download separately)
+*.h5
+*.hdf5
+
+# Uploaded images
+static/uploads/
+
+# Logs
+*.log
+error.log
+api_error.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# UI dependencies (installed via npm install)
+ui_design_project/skin-guardian/node_modules/
